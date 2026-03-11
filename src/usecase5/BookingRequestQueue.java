@@ -28,4 +28,14 @@ public class BookingRequestQueue {
             r.displayReservation();
         }
     }
+
+    // CHECK if queue still has requests
+    public boolean hasRequests() {
+        return !requestQueue.isEmpty();
+    }
+
+    // GET next request in FIFO order
+    public Reservation getNextRequest() {
+        return requestQueue.poll();
+    }
 }
