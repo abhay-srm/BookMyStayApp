@@ -1,3 +1,5 @@
+package usecase1;
+
 /**
 
  * Book My Stay Application
